@@ -1,16 +1,14 @@
 var blinking = setInterval(blinker, 1600);
 
 $('.info').css('display', 'none');
-//$('.panel-background').css('display', 'none'); //Just for editing purposes
-
 $('.intro').show();
-//$('.color').show();
-//$('.predation').show();
-//$('.uses-2').show();
-
 
 $('.case').click(function(e){
     var id = e.currentTarget.id;
+    
+    //Check for empty Size click
+    if(id === "size") return;
+    
     $('.' + id).fadeIn(1000);
     $('.panel-background').fadeIn(1000);
 })
@@ -19,6 +17,9 @@ $('.case').click(function(e){
      if($(e.currentTarget).is('#uses-1')){
          $('#uses-1').fadeOut(1000);
          $('#uses-2').fadeIn(1000);
+     }else if($(e.currentTarget).is('#pattern-1')){
+         $('#pattern-1').fadeOut(1000);
+         $('#pattern-2').fadeIn(1000);
      }else{
          $('.info').fadeOut(1000);
          $('.panel-background').fadeOut(1000);
