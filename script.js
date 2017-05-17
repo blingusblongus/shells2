@@ -1,8 +1,18 @@
 var blinking = setInterval(blinker, 1600);
 
 $('.info').css('display', 'none');
+//$('.panel-background').css('display', 'none'); //Just for editing purposes
 
-$('.intro').show();
+//$('.intro').show();
+//$('.color').show();
+//$('.predation').show();
+$('.size').show();
+
+$('.case').click(function(e){
+    var id = e.currentTarget.id;
+    $('.' + id).fadeIn(1000);
+    $('.panel-background').fadeIn(1000);
+})
 
 //old below
 
@@ -19,9 +29,12 @@ $('.intro').show();
      }
 });
 
+/* OLD
+
 $('#pattern').click(function(){
     $('#pattern-info-1').fadeIn(1000);
 });
+*/
 
 function blinker(){
     $('#click-prompt').fadeOut(800);
