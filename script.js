@@ -3,10 +3,11 @@ var blinking = setInterval(blinker, 1600);
 $('.info').css('display', 'none');
 //$('.panel-background').css('display', 'none'); //Just for editing purposes
 
-//$('.intro').show();
+$('.intro').show();
 //$('.color').show();
 //$('.predation').show();
-$('.size').show();
+//$('.uses-2').show();
+
 
 $('.case').click(function(e){
     var id = e.currentTarget.id;
@@ -14,20 +15,21 @@ $('.case').click(function(e){
     $('.panel-background').fadeIn(1000);
 })
 
-//old below
-
- $('.info').click(function(e){
-    $('.info').fadeOut(1000);
-     $('.panel-background').fadeToggle(1000);
-     
-     if($(e.currentTarget).is('#intro-info')){
-        clearInterval(blinking);
-     }else if($(e.currentTarget).hasClass('patterns')){
-         var id = e.currentTarget.id.slice(13);
-         
-         $('#pattern-info-' + (parseInt(id) + 1)).fadeIn(1000);        
+ $('.info').click(function(e){     
+     if($(e.currentTarget).is('#uses-1')){
+         $('#uses-1').fadeOut(1000);
+         $('#uses-2').fadeIn(1000);
+     }else{
+         $('.info').fadeOut(1000);
+         $('.panel-background').fadeOut(1000);
      }
 });
+
+function blinker(){
+    $('.click-prompt').fadeOut(1500);
+    $('.click-prompt').fadeIn(1500);
+}
+
 
 /* OLD
 
@@ -36,8 +38,4 @@ $('#pattern').click(function(){
 });
 */
 
-function blinker(){
-    $('#click-prompt').fadeOut(800);
-    $('#click-prompt').fadeIn(800);
-}
 

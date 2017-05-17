@@ -30,6 +30,20 @@ body {
     -webkit-text-stroke-color: black;
 }
 
+.corner-prompt {
+    position: absolute;
+    z-index: 3;
+    left: 75%;
+    top: 95%;
+}
+
+.uses-aside{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 80%;
+    left: 20%
+}
 
 /* info panels */
 
@@ -109,6 +123,21 @@ body {
     font-size: 27px 
 }
 
+.uses p {
+    font-size: 23px;
+}
+
+.uses img {
+    width: 100%;
+}
+
+.rembrandt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: right
+}
+
 
 /* Shell Cases */
 
@@ -126,7 +155,7 @@ body {
     top: -350px;
 }
 
-#shell-case-3 {
+#uses {
     width: 22%;
     height: 27%;
     left: 74%;
@@ -181,4 +210,8 @@ body {
     font-size: 100px;
 }
 
+#uses h1 {
+    transform: rotate(330deg);
+    font-size: 120px;
+}
 
