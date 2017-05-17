@@ -1,0 +1,330 @@
+body {
+    background-color: black;
+}
+
+.background {
+    width: 1334px;
+    height: 1000px;
+    margin: 0px auto;
+    background: url(images/shell_background.jpg);
+    background-size: contain;
+    color: white;
+    background-repeat: no-repeat;
+    margin: auto auto;
+}
+
+.case {
+    position: relative;
+    opacity: .8;
+    background-color: antiquewhite;
+}
+
+
+/* info panels */
+
+.panel-background {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: 1;
+    position: absolute;
+}
+
+.info {
+    width: 1334px;
+    height: 1000px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+.info .row {
+    margin-top: 15px;
+}
+
+.info img {
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-top: 10px;
+    width: 85%;
+}
+
+.info p {
+    font-size: 24px;
+}
+
+.caption {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 90%;
+}
+
+/* specific styling */
+
+.intro img {
+    margin-top: -20px;
+}
+
+.intro .click-prompt {
+    margin-top: -30px;
+}
+
+
+/* still doesn't work*/
+
+.case-text p {
+    align-self: center;
+}
+
+
+/* Shell Cases */
+
+#color {
+    width: 555px;
+    height: 407px;
+    top: 115px;
+    left: 65px;
+}
+
+#shell-case-2 {
+    width: 155px;
+    height: 320px;
+    left: 745px;
+    top: -350px;
+}
+
+#shell-case-3 {
+    width: 22%;
+    height: 27%;
+    left: 74%;
+    top: -69%;
+}
+
+#shell-case-4 {
+    width: 19%;
+    height: 21%;
+    left: 52%;
+    top: -57%;
+}
+
+#shell-case-5 {
+    width: 22%;
+    height: 26%;
+    left: 74%;
+    top: -86%;
+}
+
+#shell-case-6 {
+    width: 28%;
+    height: 28%;
+    left: 2%;
+    top: -82%;
+}
+
+#shell-case-7 {
+    width: 35%;
+    height: 23%;
+    left: 36%;
+    top: -106%;
+}
+
+#shell-case-8 {
+    width: 22%;
+    height: 28%;
+    left: 75%;
+    top: -130%;
+}
+
+
+/*
+body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.image {
+    width: 1920px;
+    height: 1080px;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -400px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#image-description {
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%
+}
+
+#rd2-info {
+    background-color: black;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 390px;
+    left: 190px;
+    display: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+}
+
+.info-text {
+    padding: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.full-info {
+    display: none;
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.background {
+    background-color: black;
+    opacity: .8;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.full-active {
+    display: none;
+}
+
+#pattern {
+    width: 174px;
+    height: 230px;
+    background-color: blue;
+    top: 30px;
+    left: 50px;
+}
+
+#color {
+    height: 370px;
+    width: 280px;
+    background-color: chocolate;
+    top: 39px;
+    left: 240px;
+}
+
+#size {
+    height: 290px;
+    width: 137px;
+    background-color: blueviolet;
+    top: 280px;
+    left: 60px;
+}
+
+#math {
+    height: 120px;
+    width: 144px;
+    background-color: green;
+    top: 423px;
+    left: 230px;
+}
+
+#big-conch {
+    height: 147px;
+    width: 144px;
+    background-color: brown;
+    top: 600px;
+    left: 45px;
+}
+
+#texture {
+    height: 147px;
+    width: 148px;
+    background-color: skyblue;
+    top: 600px;
+    left: 235px;
+}
+
+#uses {
+    height: 147px;
+    width: 148px;
+    background-color: gray;
+    top: 600px;
+    left: 445px;
+}
+
+#predation {
+    height: 210px;
+    width: 85px;
+    background-color: yellow;
+    top: 190px;
+    left: 575px;
+}
+
+.case {
+    color: black;
+    position: absolute;
+    opacity: .8;
+}
+
+#full-background {
+    width: 1500px;
+    height: 1200px;
+    transform: rotate(0deg);
+    margin-left: -157px;
+    margin-top: -269px
+}
+
+#img-container {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+}
+
+.full-info .row {
+    margin: auto auto;
+    text-align: center;
+    margin-top: 40px
+}
+
+.full-info img {
+    border-radius: 20px;
+    border: 3px solid white;
+    margin-top: 10px;
+}
+
+.full-info p {
+    font-size: 16px;
+}
+
+.caption {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 90%;
+}
+
+#pattern-info-2 img {
+    width: 85%;
+}
+
+#pattern-info-3 img {
+    width: 85%;
+}
+*/
